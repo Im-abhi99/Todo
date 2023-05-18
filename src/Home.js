@@ -69,12 +69,13 @@ export default function Home() {
     <>
 
       <div className='container my-5 text-center'>
-        <h1> Welcome to abhi's Todo</h1>
+        <h1 className='fs-3'> Welcome to abhi's Todo</h1>
         <form onSubmit={addtojson}>
           <div className='d-lg-flex '>
-            <input type="text" className='form-control w-50 mb-3 ms-lg-auto ms-auto me-auto' placeholder='Enter text' id="" onChange={(event) => setTask(event.target.value)} />
+            
+            <input type="text" className='form-control input w-50 mb-3 ms-5 ms-lg-auto ps-5 ' placeholder='Enter text' id="" onChange={(event) => setTask(event.target.value)} />
 
-            <button className='mb-3 ms-lg-2 me-auto' type="submit">Add task</button><ToastContainer /></div>
+            <button className='mb-3 ms-lg-3 me-lg-auto' type="submit">Add task</button><ToastContainer /></div>
         </form></div>
 
       <div className='container'>
@@ -87,8 +88,8 @@ export default function Home() {
                 <>
               
                   <div className='container justify-content-evenly ' >
-                    <div className='d-lg-flex sha my-3 mx-auto mb-lg-4 px-lg-5 py-lg-2 p-1'>
-                      <div className='col-lg-9 abhi ms-5 py-lg-1 fs-5 text-lg-left pe-lg-5'>{data.task}</div>
+                    <div className='d-lg-flex sha my-3 mx-auto mb-lg-4 px-lg-5 py-lg-2 '>
+                      <div className='col-lg-9 abhi ms-5 py-lg-1 fs-5 text-lg-left pe-lg-5 pt-3'>{data.task}</div>
                   <div className="d-flex mx-auto">
                       <div className='col-lg-1 mx-auto'>  <Link to="/update"><BiEdit className='fs-3 text-white' onClick={()=>update(data.id, data.task)} /></Link></div>
 
