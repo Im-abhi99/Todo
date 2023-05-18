@@ -85,4 +85,10 @@ button:active {
   box-shadow: 2px 5px 2px white;
   border-radius: 25px;
   width: 70%;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 600px) {
+  .input {
+    margin-left: 120px !important;
+  }
 }/*# sourceMappingURL=Style.css.map */
