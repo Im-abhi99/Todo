@@ -93,7 +93,7 @@ export default function Home() {
                   <div className="d-flex mx-auto">
                       <div className='col-lg-1 mx-auto'>  <Link to="/update"><BiEdit className='fs-3 text-white' onClick={()=>update(data.id, data.task)} /></Link></div>
 
-                      <div className='col-lg-1 me-5 mx-auto ' ><RiDeleteBin3Line onClick={() => deletetask(data.id)} className='fs-3 ms-lg-5 me-3' />  <ToastContainer />
+                      <div className='col-lg-1 me-5 mx-auto ' ><RiDeleteBin3Line onClick={() => deletetask(data.id)} className='fs-3 ms-lg-4 me-3' />  <ToastContainer />
                      </div>
                     </div>
                     </div>
