@@ -73,7 +73,7 @@ export default function Home() {
         <form onSubmit={addtojson}>
           <div className='d-lg-flex '>
             
-            <input type="text" className='form-control input w-50 mb-3 ms-5 ms-lg-auto ps-5 ' placeholder='Enter text' id="" onChange={(event) => setTask(event.target.value)} />
+            <input type="text" className='form-control input w-50 mb-3 ms-5 ms-lg-auto ps-3 ' placeholder='Enter text' id="" onChange={(event) => setTask(event.target.value)} />
 
             <button className='mb-3 ms-lg-3 me-lg-auto' type="submit">Add task</button><ToastContainer /></div>
         </form></div>
